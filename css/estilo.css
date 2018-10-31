@@ -7,7 +7,7 @@ body{
     display:flex;
     flex-direction:column;
     height:100vh;
-    background-image: url("E:/ProgWeb-tsi18/WEB%20imob/imgs/casa.jpg");
+    background-image: url("E:/ProgWeb-tsi18/WebImob/imgs/casa1.png");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -63,9 +63,10 @@ nav ul{
     color:inherit;
  }
 
-.principal li:hover {
-    text-decoration:underline;
-     
+.principal:hover {
+    cursor:pointer;
+    
+    
 }
 .secundario:hover{
     color:grey;
@@ -117,7 +118,10 @@ li:hover ul { display: block; }
     margin-left: 5%;
     margin-top: 200px;
     line-height:70px;
-}
+    margin-bottom:24px;
+        color: white; 
+    text-shadow: black 0.0em 0.0em 0.1em;
+    }
 
    
  #conteudo > p{
@@ -128,6 +132,8 @@ li:hover ul { display: block; }
     position:relative;
     margin-top: 30px;
     display: inline;
+    color: white; 
+    text-shadow: black 0.0em 0.0em 0.1em;
 }
   
 #conteudo span p {
@@ -135,6 +141,7 @@ li:hover ul { display: block; }
     color:white;
     font-family: 'Oswald', sans-serif;
     margin-left:5%;
+    text-shadow: black 0.0em 0.0em 0.1em;
 }
     
 #btn{
@@ -154,7 +161,8 @@ li:hover ul { display: block; }
     color:white;        
     font-family:"Verdana";
     font-size:10pt;
-       
+    box-shadow: #717171 0em 0em 0.1em;
+    text-shadow: #717171 0em 0em 0.1em;
 }
     
 #btn:hover{
@@ -239,4 +247,3 @@ li:hover ul { display: block; }
     position:absolute;
     margin-right:20px;    
 }
-
