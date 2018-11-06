@@ -1,0 +1,3 @@
+/*trasnformar para json*/
+var obj = jQuery.parseJSON( '{ "name": "John" }' ); 
+alert( obj.name === "John" );
