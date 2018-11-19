@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Carregando dados com JSON</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="dados.json">
+		</script>
+
+	<!-- AQUI SEUS CÓDIGOS JAVASCRIPT -->
+	<script>
+		$(document).ready(function(){
+//     $.getJSON('dados.json', function(json) {
+//         json.forEach(item=>{
+// 	       $("#principal").append( 
+// 	       	`
+// 	       	<p>
+// 	       	Id = ${item.id} <br>
+// 	       	Titulo = ${item.titulo} <br>
+// 	       	Descrição = ${item.descricao} <br>
+// 	       	Imagem = ${item.imagem} <br>
+// 	       	Data = ${item.data}
+// 	       	<hr>
+// 	       	</p>
+// `
+
+// 	       	);
+//         });      	
+    // });
+
+
+        $.getJSON('https://mystique-v2-americanas.b2w.io/autocomplete?content=tel&suggestionLimit=7&productLimit=3&source=nanook', function(dados){
+        	let sugestoes = dados.suggestions;
+        	sugestoes.forEach(item=>{
+        		console.log(item.term);
+        	})
+        })
+
+
+/* aqui utiliza  o json como variável*/
+    for (var i = 0; i < 4; i++) {
+    	$("ul").append(`<li><a href="${menu[i].link}">${menu[i].desc}</a></li>`);
+    	};
+ });
+
+
+</script>
+</head>
+<body>
+	<header>
+		<h2>Carregando dados com requisição jQuery</h2>
+	</header>
+	<main>
+		<h3>Lista de Itens</h3>
+		<div id="principal">
+			<ul>
+
+			</ul>
+			
+		</div>
+	</main>
+	<footer>
+		<p>Desenvolvido em sala</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,51 @@
+
+var menu = [
+	{
+		"desc": "Home",
+		"link": "index.html"
+	},
+	{
+		"desc": "Vendas",
+		"link": "Vendas.html"
+	},
+	{
+		"desc": "Produtos",
+		"link": "produtos.html"
+	},
+	{
+		"desc": "Contatos",
+		"link": "contatos.html"
+	}
+]
+
+
+var dados= [
+	{
+		"id":1,
+		"titulo": "Primeiro ítem",
+		"descricao": "Esta é a descrição do primeiro ítem.",
+		"imagem": "imagens/foto1.jpg",
+		"data": "05-11-2018"
+	},
+	{
+		"id":2,
+		"titulo": "Segundo ítem",
+		"descricao": "Esta é a descrição do segundo ítem.",
+		"imagem": "imagens/foto2.jpg",
+		"data": "05-11-2018"
+	},
+	{
+		"id":3,
+		"titulo": "Terceiro ítem",
+		"descricao": "Esta é a descrição do terceiro ítem.",
+		"imagem": "imagens/foto3.jpg",
+		"data": "05-11-2018"
+	},
+	{
+		"id":4,
+		"titulo": "Quarto ítem",
+		"descricao": "Esta é a descrição do quarto ítem.",
+		"imagem": "imagens/foto4.jpg",
+		"data": "05-11-2018"
+	}
+]
