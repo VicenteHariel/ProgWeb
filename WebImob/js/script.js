@@ -4,11 +4,12 @@
 
  //  ao passar mouse sobre a logo    
     $("#logo").hover(function(){$("#label").slideToggle(1000)}    );     
-       
+
+
 // função ao clicar no botão saiba mais   
     $("#btn").click(function(){
         $("#box").css("display","flex")
-        });
+        });       
     
 
     $("#fechar").click(function(){$("#box").css("display","none")
@@ -18,7 +19,23 @@
       $("#box").css("display","none"),
       window.alert("Dados Enviados")
     });
+  
+ // obtem  conteudo atraves do doc json
+    $.getJSON('json/conteudo.json', function(json) {
+                json.forEach(item=>{
+                  
+             $("#cont").append(`<div id="txtcont">${item.descUm}</div> <p>${item.valor}</p><span><p>${item.descDois}</p></span>
+      `)
+
+      })
+     });
+
+
+  
     
+
+ 
+
     
  }); // fim do body.ready
   
