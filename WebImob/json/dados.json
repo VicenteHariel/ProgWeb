@@ -49,10 +49,3 @@ var dados= [
 		"data": "05-11-2018"
 	}
 ]
-[
-	{
-		"descUm":"Casas de luxo <br> a partir de",
-		"valor":"R$500.000,00" ,
-		"descDois":"Te ajudaremos a encontrar as melhores opções de casas<br> que se encaixem no seu Perfil."
-	}
-]
