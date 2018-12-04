@@ -29,7 +29,51 @@
             `)
          })
        });
+//faz o primeiro paragrafo aparecer
+    $("h2").click(function(){
+      $("#p1").slideToggle(2000)
+    });
+ 
 
+ // Alerta obtendo conteudo do 2 paragrafo
+    $("#btn1").click(function(){
+      txt = $("#conteudo2").html();
+      $(".alert-success").html(txt);
+      $(".alert-success").fadeToggle();
+     });
+
+
+//adiciona titulo ao segundo paragrafo
+    $("#btn2").click(function(){
+     $('#conteudo2').prepend(`<h3>Diferencial</h3>`);
+     });
+
+// adiciona frase no final do 1 paragrafo
+        $("#btn3").click(function(){
+     $('#p1').append(`<h3>FRASE NO FINAL DO PRAGRAFO!</h3>`);
+     });
+
+// MUDA COR DE FUNDO
+  $("#btn4").click(function(){
+     $('#botoes').css("background-color", "#61bfd880");
+     });
+
+//adiciona borda inferior pontilhada
+  $("#btn5").click(function(){
+     $('#paragrafos').css("border", "dotted");
+     });
+ 
+var prof = ["John","rafael","Rodrigo"];
+var dis = ["Prog web", "Banco de Dados", "Webdesign"];
+
+
+//gera table atraves dos arrays
+$("#btn6").click(function(){             
+for (i=0; i<3;i++){
+  $("table").append(`<tr><td>${prof[i]}</td><td>${dis[i]}</td></tr>
+    `)
+}
+});
 
 
 
@@ -43,13 +87,3 @@
         */
     
     
-    /* var myVar = setInterval(myTimer ,1000);
-    function myTimer() {
-        var d = new Date(), displayDate;
-       if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
-          displayDate = d.toLocaleTimeString('pt-BR');
-       } else {
-          displayDate = d.toLocaleTimeString('pt-BR', {timeZone: 'America/Belem'});
-       }
-          document.getElementById("demo").innerHTML = displayDate;
-    }*/
