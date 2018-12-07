@@ -4,6 +4,7 @@ padding:0;
 }    
     
 body{
+    font-family: 'Josefin Sans', sans-serif;
     display:flex;
     flex-direction:column;
     height:100%;
@@ -11,7 +12,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    display:flex;      
+    display:flex; 
 
 }
 
@@ -19,7 +20,8 @@ header{
     display: flex;
     flex-direction:row;
     border-bottom:2px solid white; 
-    background-color: #fff9;
+    background-color: #343a40;
+    //background: linear-gradient(to bottom, #3981ca 0%, #ffffff5e 100%);
 }
 
 #logo{
@@ -31,10 +33,11 @@ header{
 }
    
 header div img {
-    height:100px;
+    height:120px;
 } 
 
 nav{
+    font-family: 'Josefin Sans', sans-serif;
     flex-grow:2;
     display:flex;
     justify-content:center;
@@ -52,9 +55,11 @@ nav ul{
 }
 
 .principal{
+    font-family: 'Josefin Sans', sans-serif!important;
+    font-size: 14pt;
     display: inline;
     margin-right:50px;
-    color:#146990;
+    color:white;
     height:50px;
     margin-top:50px;
 }    
@@ -62,10 +67,12 @@ nav ul{
 .principal li a:hover, a:visited, a:focus, a:active, a{ 
     text-decoration: none; 
     color:inherit;
+    font-family: 'Josefin Sans', sans-serif;
  }
 
 .principal:hover {
     cursor:pointer;
+    font-family: 'Josefin Sans', sans-serif;
     
     
 }
@@ -76,7 +83,7 @@ nav ul{
 .secundario {
     position: absolute;
     display: none;
-    margin-top: 32px;
+    margin-top: 43px;
     margin-left:-20px;
     width: 169px;
     list-style: none;
@@ -84,9 +91,10 @@ nav ul{
     border-radius: 0px 0px 10px 10px;
 }
 li ul li a {
+    font-family: 'Josefin Sans', sans-serif;
     display: block;
     text-decoration: none;
-    color: #1294b4 !important;
+    color: #343a40 !important; 
     background: #f0f2f1;
     padding: 5px;
     border: 1px solid #ccc;
@@ -106,11 +114,12 @@ li:hover ul { display: block; }
     width: 400px;
     height:25px;
     border-radius: 0px 10px 50px 0px;
+     text-shadow: black 0.0em 0.0em 0.0em;
  }
  
  #label > p{
     margin-left: 60px;
-    color:#35bbdd;
+    color:#6cacda;
     }
  #txtcont{
     color:white;
@@ -123,9 +132,8 @@ li:hover ul { display: block; }
         color: white; 
     text-shadow: black 0.0em 0.0em 0.1em;
     }
-
-   
- #conteudo > #cont> p{
+    
+ .cont {
     font-size:18pt;
     color:white;
     font-family: 'Oswald', sans-serif;
@@ -137,7 +145,7 @@ li:hover ul { display: block; }
     text-shadow: black 0.0em 0.0em 0.1em;
 }
   
-#conteudo span p {
+.cont span p {
     font-size:18pt;
     color:white;
     font-family: 'Oswald', sans-serif;
@@ -148,24 +156,29 @@ li:hover ul { display: block; }
 #btn{
     margin-left:10%;
     margin-top:40px;
-    height:50px;
-    width:90px;
+    height:60px;
+    width:100px;
     border-radius: 5px;
     border:double white;  
-    border-width:7px;        
- 
+    border-width:7px; 
+    font-family:"Verdana";  
+    font-size:10pt;     
+    padding: 0;
+    box-shadow: #717171 0em 0em 0.1em;
+    text-shadow: #717171 0em 0em 0.1em;}
+ /*
     display:flex;
     justify-content:center;
     align-items:center;
       
     line-height:50px;
     color:white;        
-    font-family:"Verdana";
-    font-size:10pt;
-    box-shadow: #717171 0em 0em 0.1em;
-    text-shadow: #717171 0em 0em 0.1em;
-}
     
+  
+    
+    
+}
+*/    
 #btn:hover{
     color:black;
     background-color: /* #ececec */ white;
@@ -189,6 +202,7 @@ li:hover ul { display: block; }
  
     align-items:center;
     position:absolute;
+    justify-content: center;
     flex-direction:column;
 }
     
@@ -288,4 +302,37 @@ main{
     display: none;
     margin-top:-320px;
     left: 25%;
+}
+
+footer{
+  bottom: 0;
+  position: fixed;
+  height:80px;
+  background-color: #1e2125;
+  width: 100%;
+  color:white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+    
+}
+
+.circle {
+  background-color: #aaa;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  margin:15px;
+  margin-bottom: 0px;
+ 
+}
+
+.circle img {    
+  margin-left: -25px;
+  margin-top: -25px;
+  width: 100px;
+  height: 100px;
+  bottom: 0;
+  
 }

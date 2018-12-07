@@ -21,7 +21,7 @@
     
     $.getJSON('json/conteudo.json', function(json) {
          json.forEach(item=>{
-          $("#cont").append(`
+          $("#cont").html(`
             <div id="txtcont">${item.descUm}</div>
             <p>${item.valor}</p>
             <span><p>${item.descDois}</p></span>
@@ -74,7 +74,6 @@ for (i=0; i<3;i++){
     `)
 }
 });
-
 
 
  }); // fim do body.ready
