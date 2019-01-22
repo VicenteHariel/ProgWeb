@@ -4,9 +4,9 @@
     var estado = document.getElementById('UF').value;
     ie = ie.replace(/[()-./,:]/g, "");
     if (VerificaIE(estado, ie)){
-        alert('Deu BELEZA é válido');
+        alert('Inscrição Estadual Válida');
     }else{
-        alert('Inscrição Estadual INCORRETA.');
+        alert('Inscrição Estadual Inválida.');
        }
 });
  
